@@ -9,32 +9,44 @@
 /*   Updated: 2022/08/28 23:45:13 by yusa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#inculude <unistd>
+#include <unistd.h>
 
-void	ft_putchar(char c, b)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
-	write(1, &b, 1);
 }
+
 void	ft_print_comb2(void)
 {
-	int a;
-	int b;
+	int	sayi1;
+	int sayi2;
 
-	a = 00;
-	b = 00;
-	while(a <= 99)
+	sayi1 = 0;
+	sayi2 = 1;
+	while(sayi1 <= 98)
 	{
-		b + 1;
-		while(b == 99)
+		sayi2 = sayi1 + 1;
+
+		while(sayi2 <= 99)
 		{
-			a + 1;
-			ft_putchar(a, b);
+			ft_putchar(sayi1 / 10 + 48);
+			ft_putchar(sayi1 % 10 + 48);
+			write(1, " ", 1);
+			ft_putchar(sayi2 / 10 + 48);
+			ft_putchar(sayi2 % 10 + 48);
+
+			if(sayi1 != 98)
+			{
+				write(1, ", ", 2);
+			}
+			sayi2++;
 		}
+		sayi1++;
 	}
 }
+
 int	main(void)
 {
 	ft_print_comb2();
-	return = (0);
+	return (0);
 }

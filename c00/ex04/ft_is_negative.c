@@ -11,12 +11,9 @@
 /* ************************************************************************** */
 #include <unistd.h>
 
-void ft_is_negative(int n)
+void	ft_is_negative(int n)
 {
-	int sayi;
-	sayi = -7;
-
-	if (sayi >= 0)
+	if (n >= 0)
 	{
 		write(1, "P", 1);
 	}
@@ -25,8 +22,9 @@ void ft_is_negative(int n)
 		write(1, "N", 1);
 	}
 }
+
 int	main(void)
 {
-	ft_is_negative(0);
+	ft_is_negative(5);
 	return (0);
 }
