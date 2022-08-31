@@ -6,7 +6,7 @@
 /*   By: yusa <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/28 18:10:04 by yusa              #+#    #+#             */
-/*   Updated: 2022/08/28 18:51:27 by yusa             ###   ########.fr       */
+/*   Updated: 2022/08/31 17:24:33 by ygenc            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -22,9 +22,9 @@ void	ft_is_negative(int n)
 		write(1, "N", 1);
 	}
 }
-
+/*
 int	main(void)
 {
 	ft_is_negative(5);
 	return (0);
-}
+}*/

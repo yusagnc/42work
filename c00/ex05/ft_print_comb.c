@@ -6,7 +6,7 @@
 /*   By: yusa <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/28 19:23:56 by yusa              #+#    #+#             */
-/*   Updated: 2022/08/28 19:40:47 by yusa             ###   ########.fr       */
+/*   Updated: 2022/08/31 17:25:20 by ygenc            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -21,11 +21,12 @@ void	ft_putchar(char a, char b, char c)
 		write(1, ", ", 2);
 	}
 }
+
 void	ft_print_comb(void)
 {
-	char d;
-	char e;
-	char f;
+	char	d;
+	char	e;
+	char	f;
 
 	d = '0';
 	while (d <= '7')
@@ -44,8 +45,9 @@ void	ft_print_comb(void)
 	d++;
 	}
 }
+/*
 int	main(void)
 {
 	ft_print_comb();
 	return (0);
-}
+}*/
