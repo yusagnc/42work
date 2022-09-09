@@ -1,31 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ygenc <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: yusa <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/04 22:49:24 by ygenc             #+#    #+#             */
-/*   Updated: 2022/09/09 01:38:41 by yusa             ###   ########.fr       */
+/*   Created: 2022/09/08 15:09:22 by yusa              #+#    #+#             */
+/*   Updated: 2022/09/09 01:49:32 by yusa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
 
-int	ft_strlen(char *str)
+void	ft_rev_int_tab(int *tab, int size)
 {
 	int i;
+	int tmp;
 
 	i = 0;
-	while (str[i] != '\0')
+	while(i <= (size /2))
 	{
+		tmp = tab[i];
+		tab[i] = tab[size -1 -i];
+		tab[size -1 -i] = tmp;
 		i++;
 	}
-	return (i);
 }
 
 int	main(void)
 {
-	char str[] = "Irem";
-	int count_num = ft_strlen(str);
-	printf("%d", count_num); 
+	int tab[5] = {1, 2, 3, 4, 5};
+	int size = 5;
+	ft_rev_int_tab(tab, size);
+	printf("%d, %d, %d, %d, %d", tab[0], tab[1], tab[2], tab[3], tab[4]);
+	printf("\n%d", size);
 }
