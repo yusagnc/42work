@@ -19,10 +19,10 @@ void	ft_putstr(char *str)
 		str++;
 	}
 }
-
+/*
 int	main(void)
 {
 	char str[] = "IREM, ÖZTIMUR";
 	ft_putstr(str);
 	return (0);
-}
+}*/

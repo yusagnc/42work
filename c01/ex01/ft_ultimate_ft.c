@@ -15,7 +15,7 @@ void	ft_ultimate_ft(int *********nbr)
 {
 	*********nbr = 42;
 }
-
+/*
 int	main(void)
 {
 	int	number;
@@ -42,4 +42,4 @@ int	main(void)
 	ft_ultimate_ft(nbr);
 	printf("%d", number);
 	return (0);
-}
+}*/

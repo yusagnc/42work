@@ -13,7 +13,7 @@
 
 int	ft_strlen(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -22,10 +22,10 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
-
+/*
 int	main(void)
 {
 	char str[] = "Irem";
 	int count_num = ft_strlen(str);
 	printf("%d", count_num); 
-}
+}*/

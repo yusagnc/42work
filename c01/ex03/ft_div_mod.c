@@ -19,7 +19,7 @@ void	ft_div_mod(int a, int b, int *div, int*mod)
 		*mod = a % b;
 	}
 }
-
+/*
 int	main(void)
 {
 	int	c;
@@ -31,4 +31,4 @@ int	main(void)
 	printf("%d", c);
 	printf("\n%d", d);
 	return (0);
-}
+}*/

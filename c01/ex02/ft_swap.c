@@ -19,7 +19,7 @@ void	ft_swap(int *a, int *b)
 	*a = *b;
 	*b = swap;
 }
-
+/*
 int	main(void)
 {
 	int	number;
@@ -32,4 +32,4 @@ int	main(void)
 	printf(",  ");
 	printf("%d", number1);
 	return (0);
-}
+}*/

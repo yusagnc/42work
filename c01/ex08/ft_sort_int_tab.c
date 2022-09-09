@@ -13,31 +13,32 @@
 
 void	ft_sort_int_tab(int *tab, int size)
 {
-	int i;
-	int tmp;
-	while(size >= 0)
+	int	i;
+	int	tmp;
+
+	while (size >= 0)
 	{
 		i = 0;
-		while(i < size -1)
+		while (i < size -1)
 		{
-			if(tab[i] > tab[i + 1])
+			if (tab[i] > tab[i + 1])
 			{
 				tmp = tab[i];
 				tab[i] = tab[i + 1];
-				tab[1 + 1] = tmp;
+				tab[i + 1] = tmp;
 			}
 			i++;
 		}
 		size--;
 	}
 }
-
+/*
 int	main(void)
 {
-	int tab[] = {5,3,1,2};
+	int tab[] = {4,1,3,2};
 	int size = (4);
 	ft_sort_int_tab(tab, size);
 	printf("%d, %d, %d, %d", tab[0], tab[1], tab[2], tab[3]);
 	printf("\n%d", size);
 	return(0);
-}
+}*/
